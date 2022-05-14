@@ -1,0 +1,123 @@
+body{
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.bulbs{
+    background-color: grey;
+    height: 1.5rem;
+    justify-content: space-around, space-between, space-evenly;
+}
+form {
+    align-items: center;
+}
+form input:focus::placeholder{
+    transition: all 4s ease;
+    font-size: .5rem;
+    border: none;
+}
+.form-group {
+    display: flex;
+}
+.form-group #task{
+    flex-grow: 2;
+}
+input{
+    font-style: italic;
+    border: none;
+}
+#dm {
+    color: rgb(66, 89, 89);
+}
+#lm {
+    color: rgb(230, 237, 89);
+}
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 18px;
+    transition: 0.9s;
+    text-align: center;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    /* border-color: #fff; */
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+ul li.checked {
+    /* background: rgb(155, 214, 230); */
+    color: rgb(163, 64, 158);
+    text-decoration: line-through;
+}
+ul li:nth-child(odd) {
+    background: hsl(312, 14%, 86%);
+}
+li:hover{
+    color: #b5782f;
+    transition: 0.4s;
+    font-size: 500;
+}
+li{
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+}
+h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+#task {
+    color: rgb(82, 55, 163);
+    background-color: #0dcaf0;
+    border-bottom: grey;
+    border: none;
+    font-style: italic;
+    /* max-width: 200px; */
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 10px 1px 20px;
+    font-size: 1.1rem;
+}
+.close:hover {
+    transition: all 2s ease;
+    font-size: .9rem;
+    color: red;
+}
+.card{
+    height: 35rem;
+}
+footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer div{
+    justify-content: end;
+    align-items: end;
+}
+footer p{
+    text-align: start;
+}
+footer a .bi-github{
+    color:#171515
+}
+footer a .bi-twitter{
+    color:rgb(0, 172, 238)
+}
+footer a .bi-whatsapp{
+    color: #25d366
+}
+
+
